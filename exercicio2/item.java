@@ -56,6 +56,9 @@ public class item {
 
     public double getTotal() {
         double total = quantidadeComprada * preco;
+        if (quantidadeComprada < 0){
+            total = 0;
+        }
         return total;
     }
 
